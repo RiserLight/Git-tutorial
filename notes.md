@@ -137,3 +137,40 @@ git push -u  orign b1 # push branch b1 from local to remote
 
 git push origin --delete b1 # remove branch b1 from remote
 ```
+
+# git cherry-pick command:
+
+Here is a concise response to the query about the git cherry-pick command with an example:
+
+## Using Git Cherry-Pick
+
+The `git cherry-pick` command allows you to apply specific commits from one branch to another. This is useful for selectively incorporating changes without merging entire branches.
+
+Here's an example of how to use `git cherry-pick`:
+
+1. Ensure you are on the branch you want to apply the commit to:
+   ```
+   git checkout main
+   ```
+
+2. Find the commit you want to cherry-pick by checking the commit log:
+   ```
+   git log
+   ```
+   Let's say the commit you want to pick has the hash `a1b2c3d`.
+
+3. Apply the commit to your current branch:
+   ```
+   git cherry-pick a1b2c3d
+   ```
+
+   This will create a new commit on the `main` branch that has the same changes as the original commit from the other branch.[1][2][3][4]
+
+The key benefits of `git cherry-pick` are:
+
+- **Selective Integration**: You can pick and choose specific commits to apply, rather than merging entire branches.
+- **Fixing Mistakes**: If you accidentally commit to the wrong branch, you can cherry-pick the commit to the correct branch.
+- **Backporting Fixes**: You can cherry-pick bug fixes from a development branch into a release branch.[5]
+
+However, overusing `git cherry-pick` can lead to a messy commit history, so it's generally recommended to use `git merge` or `git rebase` instead, unless you have a specific need for the selective integration that `git cherry-pick` provides.
+
