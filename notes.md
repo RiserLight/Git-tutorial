@@ -174,3 +174,20 @@ The key benefits of `git cherry-pick` are:
 
 However, overusing `git cherry-pick` can lead to a messy commit history, so it's generally recommended to use `git merge` or `git rebase` instead, unless you have a specific need for the selective integration that `git cherry-pick` provides.
 
+
+13. Code migration:
+
+Migration changes:
+
+Pull from Development.
+Pull code from 4.1-Dev
+create branch from 4.1-Dev.
+checkout new branch
+git merge Development --no-commit --no-ff
+Pick Appropriate changes 
+commit those changes
+Push code
+Raise Pull request from new branch to 4.1-Dev
+Verify pull request. 
+Ask for review
+That is it.
