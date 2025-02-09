@@ -366,3 +366,4 @@ This command ensures that all submodules are properly set up and synchronized wi
 
 Using submodules effectively allows you to manage external dependencies within your projects while keeping them organized and version-controlled.
 
+4. git reset --soft HEAD~1
